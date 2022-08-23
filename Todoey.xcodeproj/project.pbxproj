@@ -10,6 +10,7 @@
 		4155FA04E9BBEAF241EBC5DF /* Pods_Todoey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892BC90D7BE68D6776981E28 /* Pods_Todoey.framework */; };
 		9D622E2128B325B40058F2D6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D622E2028B325B40058F2D6 /* Item.swift */; };
 		9D622E2328B325C00058F2D6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D622E2228B325C00058F2D6 /* Category.swift */; };
+		9DC05E1B28B4F8F2008E54B2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9DC05E1A28B4F8F2008E54B2 /* README.md */; };
 		9DFD6B1D28AF39600098F933 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD6B1C28AF39600098F933 /* CategoryViewController.swift */; };
 		EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4F9239524DB00FB933B /* AppDelegate.swift */; };
 		EB2BE4FE239524DB00FB933B /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4FD239524DB00FB933B /* TodoListViewController.swift */; };
@@ -24,6 +25,7 @@
 		892BC90D7BE68D6776981E28 /* Pods_Todoey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D622E2028B325B40058F2D6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9D622E2228B325C00058F2D6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9DC05E1A28B4F8F2008E54B2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9DFD6B1C28AF39600098F933 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		EB2BE4F6239524DB00FB933B /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2BE4F9239524DB00FB933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		EB2BE4ED239524DB00FB933B = {
 			isa = PBXGroup;
 			children = (
+				9DC05E1A28B4F8F2008E54B2 /* README.md */,
 				EB2BE4F8239524DB00FB933B /* Todoey */,
 				EB2BE4F7239524DB00FB933B /* Products */,
 				4E500ACDA0284170C027D923 /* Pods */,
@@ -183,6 +186,7 @@
 			files = (
 				EB2BE506239524DC00FB933B /* LaunchScreen.storyboard in Resources */,
 				EB2BE503239524DC00FB933B /* Assets.xcassets in Resources */,
+				9DC05E1B28B4F8F2008E54B2 /* README.md in Resources */,
 				EB2BE501239524DB00FB933B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GFXMVZ7W43;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GFXMVZ7W43;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

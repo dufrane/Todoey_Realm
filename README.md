@@ -1,19 +1,25 @@
-![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
+![DV](Documentation/backGround.png)
 
 
 # Todoey ✓
 
-## Our Goal
-
-The objective of this tutorial is to understand how to save data in iOS. We'll look at various choices and learn to use UserDefaults, Core Data and Realm.
+## What skills I used
 
 
-## What you will create
+* integrated third party libraries in app using Cocoapods and Swift Package Manager.
+* data in Realm database.
+* made query and sort the database.
+* worked with UITableViews and how to set their data sources and delegates.
 
-A todolist app to keep track of all your tasks.
+# To bild:
+- clone the repo
+- install cocoaPods
+- install Realm
+- launch Todoey.xcworkspace
 
 
->This is a companion project to The App Brewery's Complete iOS Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+![DV](Documentation/screen_1.png)
+![DV](Documentation/screen_2.png)
 
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+
 

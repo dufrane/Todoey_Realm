@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Todoey
 //
-//  Created by Philipp Muellauer on 01/09/2015.
-//  Copyright (c) 2015 London App Brewery. All rights reserved.
+//  Created by Dmytro Vasylenko on 19.08.2022.
+//
 //
 
 import UIKit
@@ -17,13 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-//        print(Realm.Configuration.defaultConfiguration.fileURL)
+        print(Realm.Configuration.defaultConfiguration.fileURL)
         
-//        do {
-//            let realm = try Realm()
-//        } catch {
-//            print("Error initializing new realm, \(error) ")
-//        }
+        do {
+            let realm = try Realm()
+        } catch {
+            print("Error initializing new realm, \(error) ")
+        }
         
         return true
     }

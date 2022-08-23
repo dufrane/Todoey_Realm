@@ -2,7 +2,7 @@
 //  ToDoListViewController.swift
 //  Todoey
 //
-//  Created by Philipp Muellauer on 02/12/2019.
+//  Created by Dmytro Vasylenko on 19.08.2022.
 //  
 //
 
@@ -11,8 +11,8 @@ import RealmSwift
 
 class TodoListViewController: UITableViewController {
     
-    let realm = try! Realm()
     var todoItems: Results<Item>?
+    let realm = try! Realm()
     
     var seletedCategory: Category? {
         didSet {
@@ -22,16 +22,16 @@ class TodoListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.reloadData()
     }
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
         var textFileld = UITextField()
         
-        let alert = UIAlertController(title: "Add New Todoey Item ", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add New Todoey Item", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Add Item", style: .default) { [self] (action) in
+        let action = UIAlertAction(title: "Add Item", style: .default) {  (action) in
             
             if let currentCategory = self.seletedCategory {
                 do {
@@ -45,7 +45,7 @@ class TodoListViewController: UITableViewController {
                 }
             }
             
-            tableView.reloadData()
+            self.tableView.reloadData()
         }
         
         alert.addTextField { (alertTextField) in
@@ -56,16 +56,6 @@ class TodoListViewController: UITableViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
-    
-    //    func saveItems() {
-    //
-    //        do {
-    //            try context.save()
-    //        } catch {
-    //            print("Error saving context \(error)")
-    //        }
-    //        tableView.reloadData()
-    //    }
     
     func loadItems() {
         
@@ -101,9 +91,6 @@ extension TodoListViewController {
 // MARK: - UITableViewDelegate
 
 extension TodoListViewController {
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        80
-    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -113,13 +100,13 @@ extension TodoListViewController {
                     item.done = !item.done
                 }
             } catch {
-                print("Error saving done tatus, \(error )")
+                print("Error saving done status, \(error )")
             }
         }
         
+
         tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
-        
     }
 }
 
